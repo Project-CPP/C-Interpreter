@@ -4,3 +4,10 @@
 
 // C++ Interpreter Libraries
 #include <Console.h>
+
+using namespace std;
+
+int main()
+{
+
+}
