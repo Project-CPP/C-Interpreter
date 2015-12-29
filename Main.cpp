@@ -1,6 +1,8 @@
 // Native C++ Libraries
 #include <iostream>
 #include <string>
+#include <sstream>
+#include <vector>
 
 // C++ Interpreter Libraries
 #include <Console.h>
