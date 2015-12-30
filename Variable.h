@@ -24,5 +24,23 @@ int CheckForInt(string ProcessInput)
 		Int.push_back(FinalNumber);
 		Name.push_back(FinalName);
 	}
+
+int CheckForIntAfterMath(string ProcessInput)
+{
+	size_t i = 0;
+while (i < Name.size())
+{
+		if (ProcessInput.find("cout") != string::npos)
+		{
+			if (ProcessInput.find("<<") != string::npos) 
+			{
+				if (ProcessInput.find(Name[i]) != string::npos)
+				{
+					cout << Int[i] << endl << endl;
+				}
+			}
+		}
+		i++;
+}
 	return 0;
 }
