@@ -2,6 +2,14 @@ using namespace std;
 
 int ConsoleOutCheck(string ProcessInput)
 {
+
+	// Check for iostream library.
+		if (Library.iostream == false)
+		{
+			cout << "\nPlease include the iostream library.\n\n";
+			return 0;
+		}
+
   // CHECK FOR CONSOLE OUT.
 	if (ProcessInput.substr(0,4) == "cout")
 	  {
