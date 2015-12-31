@@ -6,6 +6,8 @@
 
 // C++ Interpreter Libraries
 #include <Console.h>
+#include <Varible.h>
+#include <Include.h>
 
 using namespace std;
 
