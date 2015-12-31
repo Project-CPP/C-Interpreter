@@ -1,3 +1,5 @@
+#include <Include.h>
+
 using namespace std;
 
 int ConsoleOutCheck(string ProcessInput)
