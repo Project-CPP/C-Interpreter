@@ -15,6 +15,10 @@ int main()
 {
 	RESTART:
 	string input = "";
+	ConsoleOutCheck(input);
+	CheckForInt(input);
+	CheckForIntAfterMath(input);
+	CHECKFORIOSTREAM(input);
 	getline(cin, input);
 	goto RESTART;
 }
