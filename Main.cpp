@@ -17,6 +17,7 @@ int main()
 	RESTART:
 	cout << "--->";
 	string input = "";
+	getline(cin, input);
 	ConsoleOutCheck(input);
 	CheckForInt(input);
 	CheckForIntAfterMath(input);
