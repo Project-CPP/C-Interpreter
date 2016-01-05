@@ -13,7 +13,9 @@ using namespace std;
 
 int main()
 {
+	cout << "CPP Interpreter v0.1. Here you can type C++ code in the terminal and get instant feedback from it.\n\n\n";
 	RESTART:
+	cout << "--->";
 	string input = "";
 	ConsoleOutCheck(input);
 	CheckForInt(input);
