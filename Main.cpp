@@ -1,13 +1,13 @@
 // Native C++ Libraries
-#include <iostream>
-#include <string>
-#include <sstream>
 #include <vector>
 
 // C++ Interpreter Libraries
-#include <Console.h>
-#include <Varible.h>
-#include <Include.h>
+#include "Console.h"
+#include "Varible.h"
+#include "Include.h"
+
+// Language Easy Libraries
+#include "LanguageEasy.h"
 
 using namespace std;
 
