@@ -1,8 +1,20 @@
+/*     
+	Author: Jaocb Muncy / Project-CPP.
+	Date: 4/2/2016.
+	Purpose: This header is used to integrate varible names and values in the program. 
+	This would be used for integers, strings, vectors, arrays, chars, doubles and floats.
+	
+*/
+
+
 using namespace std;
 
+		// Add vectors to keep track of integer names and values.
         	vector<int> Int;
 		vector<string> Name;
 
+
+// Check to see if the user inputs a integer into the program.
 int CheckForInt(string ProcessInput)
 {
 	if (ProcessInput.substr(0, 3) == "int")
@@ -25,22 +37,21 @@ int CheckForInt(string ProcessInput)
 		Name.push_back(FinalName);
 	}
 
+// Check to see if the user uses console out to print a integer to the screen.
 int CheckForIntAfterMath(string ProcessInput)
 {
-	size_t i = 0;
-while (i < Name.size())
-{
-		if (ProcessInput.find("cout") != string::npos)
+	for(size_t i = 0; i < name.size(); i++)
 		{
-			if (ProcessInput.find("<<") != string::npos) 
-			{
-				if (ProcessInput.find(Name[i]) != string::npos)
+			if (ProcessInput.find("cout") != string::npos)
 				{
-					cout << Int[i] << endl << endl;
+					if (ProcessInput.find("<<") != string::npos) 
+						{
+							if (ProcessInput.find(Name[i]) != string::npos)
+								{
+									cout << Int[i] << endl << endl;
+								}
+						}
 				}
-			}
 		}
-		i++;
-}
-	return 0;
+ return 0;
 }
