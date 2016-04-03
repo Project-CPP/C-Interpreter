@@ -1,9 +1,24 @@
+/*     
+
+	Author: Jaocb Muncy / Project-CPP.
+	Date: 4/2/2016.
+	Purpose: This header is used to handle what C++ code is allowed by having it included as a preprocessor directive. 
+	This is because of the native way C++ would be written in a compiler.
+	
+*/
+
+
 #ifndef INCLUDE_H
 #define INCLUDE_H
 
 
 using namespace std;
 
+
+/* Initialize LibrarySwitch. This is used to check if the user has included the library which contains the functions they
+are wanting to use. Please note that the default boolean values are set to false unless the user defines the library to be in their 
+program using the preprocessor directive (#include <>)
+*/
 struct LibrarySwitch
 {
 	bool cstdlib = false;
@@ -80,7 +95,7 @@ struct LibrarySwitch
 	bool condition_variable = false;
 };
 
-
+// Default Construct the LibrarySwitch as Library.
 LibrarySwitch Library;
 
 
